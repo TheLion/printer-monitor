@@ -69,12 +69,12 @@ String PrinterAuthPass = "";      // only used with haproxy or basic auth (only 
 
 // Weather Configuration
 boolean DISPLAYWEATHER = true; // true = show weather when not printing / false = no weather
-String WeatherApiKey = ""; // Your API Key from http://openweathermap.org/
+String WeatherApiKey = "19780e2efd7aaffaabe634a49086cf70"; // Your API Key from http://openweathermap.org/
 // Default City Location (use http://openweathermap.org/find to find city ID)
-int CityIDs[] = { 5304391 }; //Only USE ONE for weather marquee
-boolean IS_METRIC = false; // false = Imperial and true = Metric
+int CityIDs[] = { 2754073 }; //Only USE ONE for weather marquee
+boolean IS_METRIC = true; // false = Imperial and true = Metric
 // Languages: ar, bg, ca, cz, de, el, en, fa, fi, fr, gl, hr, hu, it, ja, kr, la, lt, mk, nl, pl, pt, ro, ru, se, sk, sl, es, tr, ua, vi, zh_cn, zh_tw
-String WeatherLanguage = "en";  //Default (en) English
+String WeatherLanguage = "nl";  //Default (en) English
 
 // Webserver
 const int WEBSERVER_PORT = 80; // The port you can access this device on over HTTP
@@ -84,8 +84,8 @@ char* www_username = "admin";  // User account for the Web Interface
 char* www_password = "password";  // Password for the Web Interface
 
 // Date and Time
-float UtcOffset = -7; // Hour offset from GMT for your timezone
-boolean IS_24HOUR = false;     // 23:00 millitary 24 hour clock
+float UtcOffset = 2; // Hour offset from GMT for your timezone
+boolean IS_24HOUR = true;     // 23:00 millitary 24 hour clock
 int minutesBetweenDataRefresh = 15;
 boolean DISPLAYCLOCK = true;   // true = Show Clock when not printing / false = turn off display when not printing
 
